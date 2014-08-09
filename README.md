@@ -1,4 +1,5 @@
 new-HvZ-Gnarwhal-sites
 ======================
 
-There's not much else to say honestly
+To build sass -
+sass --watch -l static/sass/style.scss:static/css/style.css
