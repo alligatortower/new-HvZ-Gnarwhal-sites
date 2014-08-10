@@ -16,7 +16,7 @@ $(document).ready(function(){
            var yPos = ($(window).scrollTop());
            console.log("ypos is " + yPos)
            // console.log("documentHeight is " + documentHeight)
-           // console.log("browserHeight is " + browserHeight);
+           console.log("browserHeight is " + browserHeight);
            // console.log("lastCardHeight is " + lastCardHeight);
            // console.log("stopping at is " + (yPos + lastCardHeight));
 

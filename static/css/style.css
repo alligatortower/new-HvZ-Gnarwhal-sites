@@ -55,12 +55,13 @@ h3 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  float: right; }
   /* line 38, ../sass/neat/grid/_span-columns.scss */
   h3:last-child {
     margin-right: 0; }
 
-/* line 26, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 p {
   float: left;
   display: block;
@@ -73,13 +74,17 @@ p {
   p:last-child {
     margin-right: 0; }
 
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
+blockquote {
+  font-size: 2.5em; }
+
+/* line 38, ../sass/style.scss */
 section {
   width: 100%;
   height: auto;
   min-height: 100% !important; }
 
-/* line 39, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .contents {
   max-width: 68em;
   margin-left: auto;
@@ -90,37 +95,40 @@ section {
     display: table;
     clear: both; }
 
-/* line 44, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .black {
   background-color: black;
   color: white; }
 
-/* line 48, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .red {
   background-color: #ed553b;
   color: white; }
 
-/* line 53, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .teal {
   background-color: #068587;
   color: white; }
 
-/* line 58, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .yellow {
   background-color: #f2b134;
   color: black; }
 
-/* line 63, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .white {
   background-color: white;
   color: black; }
 
-/* line 68, ../sass/style.scss */
-#intro {
-  padding: 3% 20% 0 20%;
-  text-align: center;
-  font-size: 1.75em; }
-
-/* line 73, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 #logo {
   padding: 7% 10% 0 10%; }
+
+/* line 76, ../sass/style.scss */
+#intro {
+  padding: 15% 35% 0 35%;
+  text-align: center; }
+
+/* line 81, ../sass/style.scss */
+#history {
+  padding: 15% 0 0 0; }

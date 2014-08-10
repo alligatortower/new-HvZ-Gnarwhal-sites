@@ -21,6 +21,7 @@ h2 {
 
 h3 {
     @include span-columns(12);
+    float:right;
 }
 
 p {
@@ -28,6 +29,10 @@ p {
     @include fill-parent();
     margin-top:0px;
     font-size:1.5em;
+}
+
+blockquote {
+    font-size: 2.5em;
 }
 
 section {
@@ -64,12 +69,16 @@ section {
     background-color: white;
     color:black;
 }
-
-#intro {
-    @include pad(3% 20% 0 20%);
-    text-align:center;
-    font-size:1.75em;
-}
 #logo {
     @include pad(7% 10% 0 10%);
 }
+
+#intro {
+    @include pad(15% 35% 0 35%);
+    text-align:center;
+}
+
+#history {
+    @include pad(15% 0 0 0);
+}
+
