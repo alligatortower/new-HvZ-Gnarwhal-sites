@@ -104,10 +104,38 @@ section {
 
 #history {
   padding: 0 0 0 0; }
+  #history .history-text {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #history .history-text:last-child {
+      margin-right: 0; }
+  #history .history-videos {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 60px; }
+    #history .history-videos:last-child {
+      margin-right: 0; }
+    #history .history-videos .video-holder {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-align: center; }
+      #history .history-videos .video-holder:last-child {
+        margin-right: 0; }
+      #history .history-videos .video-holder .video {
+        height: 180px;
+        background-color: black; }
 
 #info p {
   padding: 0 0 0 40px; }
 
+#footer a {
+  color: #ed553b; }
 #footer .gnar-info {
   float: left;
   display: block;
@@ -117,6 +145,8 @@ section {
     margin-right: 0; }
   #footer .gnar-info img {
     width: 500px; }
+  #footer .gnar-info li {
+    display: inline; }
 #footer .message {
   float: left;
   display: block;
@@ -124,3 +154,19 @@ section {
   width: 48.82117%; }
   #footer .message:last-child {
     margin-right: 0; }
+  #footer .message .input-fields {
+    display: block;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 15px; }
+  #footer .message .message-email {
+    margin-top: 15px; }
+  #footer .message .message-body {
+    margin-top: 25px; }
+  #footer .message button {
+    background-color: #c6c6c6;
+    border: none;
+    padding: 15px;
+    float: right;
+    margin-top: 20px; }
