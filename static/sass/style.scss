@@ -6,7 +6,7 @@ html, body {
     height: 100%;
 }
 body {
-    position:relative;
+   position:relative;
 }
 
 .clearfix:after {
@@ -78,7 +78,7 @@ section {
     color:black;
 }
 #logo {
-    background: url('static/img/webhvz.jpg') no-repeat;
+     background: url('../img/webhvzsmall.jpg') no-repeat;
     background-size: cover;
 }
 
