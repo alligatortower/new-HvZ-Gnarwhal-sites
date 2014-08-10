@@ -139,6 +139,7 @@ section {
 #intro {
   text-align: center; }
 
+<<<<<<< HEAD
 /* line 89, ../sass/style.scss */
 #intro p {
   padding: 0 30% 0 30%; }
@@ -154,3 +155,8 @@ section {
 /* line 105, ../sass/style.scss */
 #info p {
   padding: 0 0 0 40px; }
+=======
+/* line 71, ../sass/style.scss */
+#logo {
+  padding: 7% 10% 0 10%; }
+>>>>>>> 256372adced4fa405b7aa2b439b60606125407d4
