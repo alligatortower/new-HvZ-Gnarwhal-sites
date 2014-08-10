@@ -33,7 +33,7 @@ p {
 section {
     width: 100%;
     height: auto;
-    min-height: 120% !important;
+    min-height: 100% !important;
 }
 
 .contents {
@@ -66,9 +66,7 @@ section {
 }
 
 #intro {
-    @include pad(3% 20% 0 20%);
     text-align:center;
-    font-size:1.75em;
 }
 #logo {
     @include pad(7% 10% 0 10%);
