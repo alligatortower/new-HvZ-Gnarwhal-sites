@@ -107,3 +107,20 @@ section {
 
 #info p {
   padding: 0 0 0 40px; }
+
+#footer .gnar-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #footer .gnar-info:last-child {
+    margin-right: 0; }
+  #footer .gnar-info img {
+    width: 500px; }
+#footer .message {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #footer .message:last-child {
+    margin-right: 0; }

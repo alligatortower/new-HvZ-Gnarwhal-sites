@@ -106,3 +106,16 @@ section {
 #info p {
     @include pad(0 0 0 40px);
 }
+
+#footer {
+    .gnar-info {
+        @include span-columns(6);
+        img {
+            width:500px;
+        }
+    }
+    .message {
+        @include span-columns(6);
+    }
+
+}
