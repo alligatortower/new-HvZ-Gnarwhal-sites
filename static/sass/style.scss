@@ -14,7 +14,10 @@ body {
     display: block;
     clear: both;
 }
-
+.space-20 {
+    min-height:20%;
+    content: "&nbsp;";
+}
 h2 {
     @include span-columns(12);
 }
@@ -22,6 +25,10 @@ h2 {
 h3 {
     @include span-columns(12);
     float:right;
+}
+
+a {
+    color:$yellow;
 }
 
 p {
@@ -37,13 +44,14 @@ blockquote {
 
 section {
     width: 100%;
-    height: auto; 
+    height: auto;
     min-height: 100% !important;
 }
 
 .contents {
     @include outer-container;
-    
+    @include pad(10% 0 15% 0);
+
 }
 
 .black {
@@ -70,15 +78,30 @@ section {
     color:black;
 }
 #logo {
-    @include pad(7% 10% 0 10%);
+    background: url('static/img/webhvz.jpg') no-repeat;
+    background-size: cover;
 }
 
 #intro {
-    @include pad(15% 35% 0 35%);
     text-align:center;
 }
 
-#history {
-    @include pad(15% 0 0 0);
+#intro p {
+    @include pad(0 30% 0 30%);
 }
 
+#intro img {
+    width:600px;
+}
+
+#history {
+    @include pad(0 0 0 0);
+}
+
+#history .contents {
+
+}
+
+#info p {
+    @include pad(0 0 0 40px);
+}

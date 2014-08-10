@@ -40,7 +40,12 @@ body {
   display: block;
   clear: both; }
 
-/* line 18, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
+.space-20 {
+  min-height: 20%;
+  content: "&nbsp;"; }
+
+/* line 21, ../sass/style.scss */
 h2 {
   float: left;
   display: block;
@@ -50,7 +55,7 @@ h2 {
   h2:last-child {
     margin-right: 0; }
 
-/* line 22, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 h3 {
   float: left;
   display: block;
@@ -61,7 +66,11 @@ h3 {
   h3:last-child {
     margin-right: 0; }
 
-/* line 27, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
+a {
+  color: #f2b134; }
+
+/* line 34, ../sass/style.scss */
 p {
   float: left;
   display: block;
@@ -74,61 +83,74 @@ p {
   p:last-child {
     margin-right: 0; }
 
-/* line 34, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 blockquote {
   font-size: 2.5em; }
 
-/* line 38, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 section {
   width: 100%;
   height: auto;
   min-height: 100% !important; }
 
-/* line 44, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .contents {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 10% 0 15% 0; }
   /* line 15, ../sass/bourbon/addons/_clearfix.scss */
   .contents:after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 49, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .black {
   background-color: black;
   color: white; }
 
-/* line 53, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .red {
   background-color: #ed553b;
   color: white; }
 
-/* line 58, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .teal {
   background-color: #068587;
   color: white; }
 
-/* line 63, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .yellow {
   background-color: #f2b134;
   color: black; }
 
-/* line 68, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .white {
   background-color: white;
   color: black; }
 
-/* line 72, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #logo {
-  padding: 7% 10% 0 10%; }
+  background: url("static/img/webhvz.jpg") no-repeat;
+  background-size: cover; }
 
-/* line 76, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 #intro {
-  padding: 15% 35% 0 35%;
   text-align: center; }
 
-/* line 81, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
+#intro p {
+  padding: 0 30% 0 30%; }
+
+/* line 93, ../sass/style.scss */
+#intro img {
+  width: 600px; }
+
+/* line 97, ../sass/style.scss */
 #history {
-  padding: 15% 0 0 0; }
+  padding: 0 0 0 0; }
+
+/* line 105, ../sass/style.scss */
+#info p {
+  padding: 0 0 0 40px; }

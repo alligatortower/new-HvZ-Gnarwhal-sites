@@ -10,25 +10,26 @@ $(document).ready(function(){
 
        $(window).scroll(function() {
          //  var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-           documentHeight = $(document).height();
-           browserHeight = $(window).height();
-           lastCardHeight = $('section').last().height();
+           var documentHeight = $(document).height();
+           var browserHeight = $(window).height();
+           var cardHeight = $bgobj.height();
+           var lastCardHeight = $('section').last().height();
            var yPos = ($(window).scrollTop());
-           console.log("ypos is " + yPos)
+           var stopCheck = origin + (cardHeight - browserHeight);
+           var fixHeight = yPos - (cardHeight - browserHeight);
            // console.log("documentHeight is " + documentHeight)
-           console.log("browserHeight is " + browserHeight);
+           // console.log("browserHeight is " + browserHeight);
            // console.log("lastCardHeight is " + lastCardHeight);
            // console.log("stopping at is " + (yPos + lastCardHeight));
+           console.log("ypos at is " + (yPos));
+           console.log("card height at is " + (cardHeight));
+           //console.log("stopping at is " + (stopLocation));
 
            if (yPos + lastCardHeight >= documentHeight ){
-               return
+               return;
            }
-
-           //debugger
-           //if we are above the card's start
-           //if we are past the card
-           else if (yPos > origin) {
-               $bgobj.css({ top: yPos });
+           if (yPos > stopCheck){
+               $bgobj.css({top: fixHeight});
            }
            previous = yPos;
 
