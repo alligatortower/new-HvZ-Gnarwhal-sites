@@ -32,13 +32,13 @@ p {
 
 section {
     width: 100%;
-    height: auto; 
-    min-height: 100% !important;
+    height: auto;
+    min-height: 120% !important;
 }
 
 .contents {
     @include outer-container;
-    
+
 }
 
 .black {

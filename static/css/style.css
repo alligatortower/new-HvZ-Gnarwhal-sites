@@ -77,7 +77,7 @@ p {
 section {
   width: 100%;
   height: auto;
-  min-height: 100% !important; }
+  min-height: 120% !important; }
 
 /* line 39, ../sass/style.scss */
 .contents {
