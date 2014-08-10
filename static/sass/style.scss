@@ -9,6 +9,12 @@ body {
     position:relative;
 }
 
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 h2 {
     @include span-columns(12);
 }
@@ -21,16 +27,17 @@ p {
     @include span-columns(12);
     @include fill-parent();
     margin-top:0px;
+    font-size:1.5em;
 }
 
 section {
-    height: 150%;
     width: 100%;
+    height: auto; 
+    min-height: 100% !important;
 }
 
 .contents {
     @include outer-container;
-    font-size:1.5em;
     
 }
 
