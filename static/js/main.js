@@ -3,32 +3,36 @@
 $(document).ready(function(){
    $($('section').get().reverse()).each(function(){
        var $bgobj = $(this); // assigning the object
-       var origin = $(this).offset().top
-       console.log('origin first' +  origin)
-       
-       $(this).css('position', 'absolute')
+       var origin = $bgobj.offset().top;
+       $bgobj.css('position', 'absolute');
        $bgobj.css({ top:origin });
-   
+       var previous  = 0
+
        $(window).scroll(function() {
-         //  var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-          
-           var yPos = ($(window).scrollTop()); 
-           console.log('origin: ' + origin)
-           console.log(yPos)
-           if (yPos < origin && yPos >= 0) { 
-               // Put together our final background position
+         //  var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+           documentHeight = $(document).height();
+           browserHeight = $(window).height();
+           lastCardHeight = $('section').last().height();
+           var yPos = ($(window).scrollTop());
+           console.log("ypos is " + yPos)
+           // console.log("documentHeight is " + documentHeight)
+           // console.log("browserHeight is " + browserHeight);
+           // console.log("lastCardHeight is " + lastCardHeight);
+           // console.log("stopping at is " + (yPos + lastCardHeight));
 
-               
-           // Move the background
-            $bgobj.css({ top: yPos });
+           if (yPos + lastCardHeight >= documentHeight ){
+               return
            }
+
+           //debugger
+           //if we are above the card's start
+           //if we are past the card
            else if (yPos > origin) {
-            $bgobj.css({ top: origin });
+               $bgobj.css({ top: yPos });
+           }
+           previous = yPos;
 
-           }
-           else if (yPos <= 0) {
-            $bgobj.css({ top: 0 });
-           }
-       }); 
-   });    
+
+       });
+   });
 });

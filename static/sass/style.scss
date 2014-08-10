@@ -11,12 +11,12 @@ body {
 
 section {
     height: 100%;
+    width: 100%;
 }
 
 .contents {
     @include outer-container;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    margin-top: 3%;
 }
 
 .black {
