@@ -80,6 +80,7 @@ section {
 #logo {
      background: url('../img/webhvzsmall.jpg') no-repeat;
     background-size: cover;
+    @include pad(0 0 0 0);
 }
 
 #intro {

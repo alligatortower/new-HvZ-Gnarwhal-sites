@@ -90,7 +90,8 @@ section {
 
 #logo {
   background: url("../img/webhvzsmall.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding: 0 0 0 0; }
 
 #intro {
   text-align: center; }
