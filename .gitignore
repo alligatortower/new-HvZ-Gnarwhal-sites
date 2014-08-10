@@ -63,7 +63,7 @@ media/
 
 #PYSCSS trash
 .sass-cache/
-*static_source/sass/style.css*
+*static/sass/style.css*
 
 #VIM
 *.swp
