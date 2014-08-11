@@ -1,28 +1,36 @@
-
-
 $(document).ready(function(){
    $($('section').get().reverse()).each(function(){
        var $bgobj = $(this); // assigning the object
-       var origin = Math.floor($bgobj.offset().top);
+       var origin = $bgobj.offset().top;
+       $bgobj.data('height', $bgobj.height())
+       $bgobj.data('origin', origin);
        $bgobj.css('position', 'absolute');
        $bgobj.css({ top:origin });
+   });
 
-       $(window).scroll(function() {
-           //  var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-           var yPos = Math.floor(($(window).scrollTop()));
-           var browserHeight = Math.floor($(window).height());
-           var cardHeight = Math.floor($bgobj.height());
-
-
+   $(window).scroll(function() {
+       var yPos = $(window).scrollTop();
+       var browserHeight = $(window).height();
+       var card = false
+       var origin
+       $($('section').get().reverse()).each(function(){
+           origin = $(this).data('origin') 
+           if (yPos > origin) {
+              card = $(this);
+              return false; 
+           }
+       })
+       if (card != false) {
+           var cardHeight = card.data('height')
            var stopCheck = origin + (cardHeight - browserHeight);
            var fixHeight = yPos - (cardHeight - browserHeight);
 
            if (yPos == origin){
-               $bgobj.css({ top:origin });
+               card.css({ top:origin });
            }
            else if (yPos > stopCheck){
-               $bgobj.css({top: fixHeight});
+               card.css({top: fixHeight});
            }
-       });
-   });
+       }
+   })
 });
