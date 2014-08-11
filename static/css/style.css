@@ -57,7 +57,8 @@ blockquote {
 section {
   width: 100%;
   height: auto;
-  min-height: 100% !important; }
+  min-height: 100% !important;
+  -webkit-transform: translate3d(0, 0, 0); }
 
 .contents {
   max-width: 68em;
