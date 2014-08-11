@@ -25,10 +25,10 @@ $(document).ready(function(){
            console.log("card height at is " + (cardHeight));
            //console.log("stopping at is " + (stopLocation));
 
-           if (yPos + lastCardHeight >= documentHeight ){
-               return;
+           if (yPos == origin){
+               $bgobj.css({ top:origin });
            }
-           if (yPos > stopCheck){
+           else if (yPos > stopCheck){
                $bgobj.css({top: fixHeight});
            }
            previous = yPos;
