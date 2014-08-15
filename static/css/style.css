@@ -15,10 +15,6 @@ body {
   display: block;
   clear: both; }
 
-.space-20 {
-  min-height: 20%;
-  content: "&nbsp;"; }
-
 h2 {
   float: left;
   display: block;
@@ -36,9 +32,6 @@ h3 {
   font-size: 2em; }
   h3:last-child {
     margin-right: 0; }
-
-a {
-  color: #f2b134; }
 
 p {
   float: left;
@@ -90,7 +83,7 @@ section {
   background-color: white;
   color: black; }
 
-#logo {
+#hvz-logo {
   background: url("../img/webhvzsmall.jpg") no-repeat;
   background-size: cover;
   padding: 0 0 0 0; }
@@ -133,8 +126,28 @@ section {
         height: 180px;
         background-color: black; }
 
+#rules p {
+  font-size: 1.25em; }
+#rules ul {
+  margin-top: 0px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 0 0 0 0; }
+  #rules ul:last-child {
+    margin-right: 0; }
+#rules li {
+  margin-left: 1em; }
+#rules a {
+  color: #112f41; }
+#rules p.rules-intro {
+  font-size: 1.4em; }
+
 #info p {
   padding: 0 0 0 40px; }
+  #info p a {
+    color: #f2b134; }
 
 #footer a {
   color: #ed553b; }
@@ -172,3 +185,43 @@ section {
     padding: 15px;
     float: right;
     margin-top: 20px; }
+
+#gnar-logo {
+  background-color: #e4eae8; }
+
+#gnar-footer {
+  background-color: #345c64;
+  color: white; }
+  #gnar-footer .logo-row {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #gnar-footer .logo-row:last-child {
+      margin-right: 0; }
+  #gnar-footer .footer-content-row {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #gnar-footer .footer-content-row:last-child {
+      margin-right: 0; }
+    #gnar-footer .footer-content-row .footer-text {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #gnar-footer .footer-content-row .footer-text:last-child {
+        margin-right: 0; }
+      #gnar-footer .footer-content-row .footer-text a {
+        color: white; }
+    #gnar-footer .footer-content-row .gnester {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #gnar-footer .footer-content-row .gnester:last-child {
+        margin-right: 0; }
+
+.hidden-wufoo {
+  display: none; }

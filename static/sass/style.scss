@@ -14,10 +14,7 @@ body {
     display: block;
     clear: both;
 }
-.space-20 {
-    min-height:20%;
-    content: "&nbsp;";
-}
+
 h2 {
     @include span-columns(12);
 }
@@ -28,9 +25,6 @@ h3 {
     font-size:2em;
 }
 
-a {
-    color:$yellow;
-}
 
 p {
     @include span-columns(12);
@@ -79,7 +73,8 @@ section {
     background-color: white;
     color:black;
 }
-#logo {
+
+#hvz-logo {
      background: url('../img/webhvzsmall.jpg') no-repeat;
     background-size: cover;
     @include pad(0 0 0 0);
@@ -99,27 +94,54 @@ section {
 
 #history {
     @include pad(0 0 0 0);
+
     .history-text {
         @include span-columns(12);
     }
-    .history-videos {
 
+    .history-videos {
         @include span-columns(12);
         margin-top:60px;
+
         .video-holder {
             @include span-columns(4 of 12);
             text-align:center;
+
             .video {
                 height:180px;
                 background-color:black;
             }
         }
     }
+}
+
+#rules {
+    p {
+        font-size:1.25em;
+    }
+    ul {
+        margin-top:0px;
+        @include span-columns(12);
+        @include pad(0 0 0 0);
+    }
+
+    li {
+        margin-left: 1em;
+    }
+    a {
+        color:$dark-blue;
+    }
+    p.rules-intro {
+        font-size:1.4em;
+    }
 
 }
 
 #info p {
     @include pad(0 0 0 40px);
+    a {
+        color:$yellow;
+    }
 }
 
 #footer {
@@ -161,5 +183,42 @@ section {
             margin-top:20px;
         }
     }
+}
 
+// GNARWHAL
+
+#gnar-logo {
+    background-color:$gnar-logo-bg;
+}
+
+#slap-logo {
+
+}
+
+#gnar-footer {
+    background-color:$gnar-footer-bg;
+    color:white;
+
+    .logo-row {
+        @include span-columns(12);
+    }
+    .footer-content-row {
+        @include span-columns(12);
+
+        .footer-text {
+            @include span-columns(6 of 12);
+            a {
+                color:white;
+            }
+        }
+        .gnester {
+            @include span-columns(6 of 12);
+        }
+    }
+}
+
+//wufoo
+
+.hidden-wufoo {
+    display:none;
 }
