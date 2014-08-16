@@ -6,13 +6,8 @@ html, body {
     height: 100%;
 }
 body {
-   position:relative;
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
+    position:relative;
+    font-family: "ff-tisa-web-pro",serif;
 }
 
 h2 {
@@ -30,7 +25,6 @@ p {
     @include span-columns(12);
     @include fill-parent();
     margin-top:0px;
-    font-size:1.5em;
 }
 
 blockquote {
@@ -78,67 +72,180 @@ section {
      background: url('../img/webhvzsmall.jpg') no-repeat;
     background-size: cover;
     @include pad(0 0 0 0);
+
+    img {
+        max-width: 450px;
+    }
 }
+
 
 #intro {
     text-align:center;
-}
 
-#intro p {
-    @include pad(0 30% 0 30%);
-}
+    p {
+        font-size:38pt;
+    }
 
-#intro img {
-    width:600px;
+    img {
+        width:100%;
+        max-width:1000px;
+    }
 }
 
 #history {
     @include pad(0 0 0 0);
 
+    p {
+        font-size:30pt;
+    }
+
     .history-text {
         @include span-columns(12);
     }
 
-    .history-videos {
+   #videos {
         @include span-columns(12);
-        margin-top:60px;
-
         .video-holder {
             @include span-columns(4 of 12);
+            width:280px;
+
+
             text-align:center;
 
             .video {
+                
                 height:180px;
-                background-color:black;
+            }
+            .video-label {
+                font-size:14px;
             }
         }
+    }
+    .video-holder-with-space {
+        margin-right:50px;
+    }
+}
+#quote {
+    blockquote {
+        font-size:55pt; // first sentence on first line
+        font-style:italic;// italic
     }
 }
 
 #rules {
     p {
-        font-size:1.25em;
-    }
-    ul {
-        margin-top:0px;
-        @include span-columns(12);
-        @include pad(0 0 0 0);
+        font-size:20pt;
     }
 
-    li {
-        margin-left: 1em;
+    h2 {
+        font-size:22pt;
+    }   
+
+    .equipment-row {
+        @include span-columns(12);
+
+        .equipment-item {
+            @include span-columns(4 of 12);
+            .eq-big-img {
+                max-width:300px;
+            }
+            .eq-label {
+                font-size:20pt;
+            }
+            .check {
+                position:relative;
+                top:15px;
+            }
+        }
     }
-    a {
-        color:$dark-blue;
+    .no-play-row {
+        @include span-columns(12);
+        margin-bottom:30px;
+
+        .no-play-item {
+            display:inline-block;
+            max-width:170px;
+            margin-left:9px;
+            margin-right:9px;
+            vertical-align:top;
+
+            .no-play-img {
+                width:100%
+            }
+            .no-play-label {
+                font-size:18pt;
+            }
+        }
+
     }
-    p.rules-intro {
-        font-size:1.4em;
+    .safety-row {
+        @include span-columns(12);
+        .safety-item {
+            @include span-columns(6 of 12);
+            .safety-img {
+                width:30%;
+                display:inline-block;
+                vertical-align:top;
+                position:relative;
+            }
+                
+            #safety-img-1 {
+                top:15px;
+            }
+            #safety-img-2 {
+                top:15px;
+            }
+            #safety-img-3 {
+                top:10px;
+            }
+            #safety-img-4 {
+                top:10px;
+            }
+            
+            .safety-text {
+                width:69%;
+                display:inline-block;
+                vertical-align:top;
+                li {
+                    font-size:25pt;
+                }
+            }
+        }
+    }
+    .safety-disclaimer {
+        @include span-columns(12);
+        margin-top:20px;
+
+        small {
+            font-size:9pt;
+        }
+    }
+    .team-rules-row {
+        @include span-columns(12);
+
+        .team-column {
+            @include span-columns(6 of 12);
+        }
     }
 
 }
+.smaller-logo {
+    margin:0px;
+    @include pad(0 0 0 0);
+}
+.full-rules {
+    @include pad(0 0 0 0);
+    margin-top:0px;
+}
 
-#info p {
-    @include pad(0 0 0 40px);
+#info {
+    h2 {
+        font-size:30pt;
+    }
+    p {
+        font-size:25pt;
+        @include pad(0 0 0 40px);
+    }
     a {
         color:$yellow;
     }
@@ -152,7 +259,7 @@ section {
     .gnar-info {
         @include span-columns(6);
         img {
-            width:500px;
+            width:100%;
         }
 
 

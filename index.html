@@ -12,6 +12,8 @@
 
         <link rel="stylesheet" href="/static/css/normalize.min.css">
         <link rel="stylesheet" href="/static/css/style.css">
+        <script type="text/javascript" src="//use.typekit.net/nnm6unl.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     </head>
     <body>
@@ -20,14 +22,14 @@
       <![endif]-->
       <section id="hvz-logo" class="hvz-image"> 
         <div class="contents">
-          <center><img src='static/img/hvzlogo.gif'/></center>
+          <center><img id='hvz-logo-img' src='static/img/hvzlogo.png'/></center>
         </div>
       </section>
       <section id='intro' class="black"> 
         <div class="contents">
             <p><strong>Humans vs. Zombies</strong> is a game of tag played at schools, camps, neighborhoods, libraries, and conventions around the world.</p>
             <p>Human players must remain vigilant and defend themselves with socks and dart blasters to avoid being tagged by a growing zombie horde.</p>
-            <img src='static/img/newslogos.gif'/>
+            <img src='static/img/Press.png'/>
         </div>
       </section>
       <section id="history" class="red"> 
@@ -36,21 +38,20 @@
             <p>Since beginning at Goucher college in 2005, Humans vs. Zombies has developed an international fan base and received prominent press coverage from the <i>New York Times</i>, the <i>Washington Post</i>, <i>NPR</i>, the <i>Associated Press</i>, and The Colbert Report, who named us the number one threat to America. HvZ is played worldwide from Australia to Zimbabwe; there are games on every continent except Antarctica, and we're working on that.</p>
             <p>Humans vs. Zombies is always free to play, and made available under a Creative Commons license.</p>
           </div>
-          <div class='history-videos'>
-            <div class='video-holder'>
-              <iframe src="//player.vimeo.com/video/24361496" width="350" height="218" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div id='videos'>
+            <div class='video-holder video-holder-with-space'>
+              <iframe src="//player.vimeo.com/video/24361496" width="280" height="218" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <p class='video-label'>Intro to HvZ</p>
             </div>
-            <div class='video-holder'>
-              <iframe src="//player.vimeo.com/video/1956330" width="350" height="218" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class='video-holder video-holder-with-space'>
+              <iframe src="//player.vimeo.com/video/1956330" width="280" height="218" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <p class='video-label'>2007 Documentary</p>
             </div>
             <div class='video-holder'>
-              <iframe src="//player.vimeo.com/video/7717871" width="350" height="218" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe src="//player.vimeo.com/video/7717871" width="280" height="218" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <p class='video-label'>Spread of HvZ</p>
             </div>
           </div>
-        </div>
       </section>
       <section id="quote" class="teal"> 
         <div class="contents">
@@ -69,25 +70,131 @@
           <p>The Zombies win when all human players have been tagged and turned into zombies.</p>
 	        <p>The Humans win by surviving long enough for all of the zombies to starve.</p>
           <h2>Equipment</h2>
-          <p>This gear is required for all players:</p>
-	        <ul>
-            <li>Bandana</li>
-            <li>Foam Dart Blaster, Marshmallow Launcher, and/or socks</li>
-            <li>One 3x5 index card</li>
-          </ul>
-          <h2>Human Rules</h2>
-	        <p><strong>Wearing a Bandanna:</strong> Humans must wear a headband around an arm or leg to identify them as players of the game. (This headband will come in handy when you become a zombie!)</p>
-	        <p><strong>Stunning a Zombie:</strong> Humans may stun a Zombie for 15 minutes by blasting them with a blaster or throwing a sock at them.</p>
-	        <p><strong>When Tagged By a Zombie:</strong> When tagged by a Zombie, a Human is required to distribute their ID card. One hour after being tagged, tie your bandanna around your head &ndash; you are now a member of the Zombie team! Go tag some Humans.</p>
-	        <p><strong>I.D. Number:</strong> Humans must keep an index card with their unique identification number on them at all times.</p>
-          <p><strong>Staying On Campus:</strong> Humans must sleep on campus. If you need to leave campus for longer than 24 hours, contact the game moderators and remove yourself from the game.</p>
-          <h2>Zombie Rules</h2>
-	        <p><strong>Feeding:</strong> Zombies must feed every 48 hours. A zombie feeds by reporting their tag on the website.</p>
-	        <p><strong>Tagging</strong>: A tag is a firm touch to any part of a Human. After tagging a Human the Zombie must collect their ID card and report the tag.</p>
-	        <p><strong>Getting Shot:</strong> When hit with a dart, a marshmallow, or a sock, a Zombie is stunned for 15 minutes. A stunned zombie may not interact with the game in any way. This includes shielding other zombies from bullets or continuing to run toward a human. If shot while stunned, the zombie&rsquo;s stun timer is reset back to 15 minutes.</p>
-	        <p><strong>Wearing A Headband:</strong> Zombies must wear a bandanna around their heads at all times. The Original Zombie does not need to wear a headband.</p>
-          <h2>Complete Rules</h2>
-          <p>Read the complete rules <a href="rules.html">here</a>
+          <div class='equipment-row'>
+            <div class='equipment-item'>
+              <center>
+                <img class='eq-big-img' src='static/img/eq1.png' />
+                <span class='eq-label'>Bandana</span><img class='check' src='static/img/check.png' /> 
+              </center>
+            </div>
+            <div class='equipment-item'>
+              <center>
+                <img class='eq-big-img' src='static/img/eq2.png' />
+                <span class='eq-label'>Foam Dart Blaster</span><img class='check' src='static/img/check.png' /> <br />
+                <span class='eq-label'>Marshmallow Launcher</span><img class='check' src='static/img/check.png' /> <br />
+                <span class='eq-label'>and/or socks</span><img class='check' src='static/img/check.png' /> 
+              </center>
+            </div>
+            <div class='equipment-item'>
+              <center>
+                <img class='eq-big-img' src='static/img/eq3.png' />
+                <span class='eq-label'>One 3x5 index card</span><img class='check' src='static/img/check.png' /> 
+              </center>
+            </div>
+          </div>
+          <h2>Safe Zones</h2>
+          <p>Some areas on campus are &ldquo;no play zones,&rdquo; where the game is permanently suspended. Blasters must be concealed and no players may be stunned or tagged. These areas include:</p>
+          <div class='no-play-row'>
+            <div class='no-play-item'>
+              <center>
+                <img class='no-play-img' src='static/img/no1.png' />
+                <span class='no-play-label'>Bathrooms</span>
+              </center>
+            </div>
+            <div class='no-play-item'>
+              <center>
+                <img class='no-play-img' src='static/img/no2.png'/>
+                <span class='no-play-label'>Health Centers</span>
+              </center>
+            </div>
+            <div class='no-play-item'>
+              <center>
+                <img class='no-play-img' src='static/img/no3.png'/>
+                <span class='no-play-label'>Libraries</span>
+              </center>
+            </div>
+            <div class='no-play-item'>
+              <center>
+                <img class='no-play-img' src='static/img/no4.png'/>
+                <span class='no-play-label'>Indoor Athletic Facilities</span>
+              </center>
+            </div>
+            <div class='no-play-item'>
+              <center>
+                <img class='no-play-img' src='static/img/no5.png'/>
+                <span class='no-play-label'>Academic buildings</span>
+              </center>
+            </div>
+          </div>
+          <p>Other areas on campus are merely "safe zones", where gameplay continues but humans can't be tagged (unless a zombie has both of their feet outside the safe zone). These areas include: <strong>Dorm rooms</strong> and <strong>Dining Halls</strong></p>
+          <h2>Safety Rules</h2>
+          <p>Rules created for the safety of all players are strictly enforced. Violation of safety rules will result in a ban from the game.</p>
+          <div class='safety-row'>
+            <div class='safety-item'>
+              <img id='safety-img-1' class='safety-img' src='static/img/safety1.png' />
+              <div class='safety-text'>
+                <ol>
+                  <li>No realistic looking weaponry. Blasters must be brightly colored and have blaze-orange tips.</li>
+                </ol>
+              </div>
+            </div>
+            <div class='safety-item'>
+              <img id='safety-img-2' class='safety-img' src='static/img/safety2.png' />
+              <div class='safety-text'>
+                <ol start='2'>
+                  <li>Blasters may not be visible inside of academic buildings or jobs on campus.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class='safety-row'>
+            <div class='safety-item'>
+              <img id='safety-img-3' class='safety-img' src='static/img/safety3.png' />
+              <div class='safety-text'>
+                <ol start='3'>
+                  <li>Players may not use cars or play where there is traffic.</li>
+                </ol>
+              </div>
+            </div>
+            <div class='safety-item'>
+              <img id='safety-img-4' class='safety-img' src='static/img/safety4.png' />
+              <div class='safety-text'>
+                <ol start='4'>
+                  <li>Socks, Darts or Marshmallows must not hurt on impact.*</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class='safety-disclaimer'>
+            <small>*Foam dart blasters and marshmallow launchers are children&rsquo;s toys &ndash; it should be obvious that your blaster won&rsquo;t hurt anyone. If you modify your blaster or are somehow not sure if it is safe, speak with a moderator and ask them to check your blaster.</small>
+          </div>
+
+          <div class='team-rules-row'>
+            <div class='team-column'>
+              <center><h2>Human Rules</h2></center>
+              <p><strong>Wearing a Bandanna:</strong> Humans must wear a headband around an arm or leg to identify them as players of the game. (This headband will come in handy when you become a zombie!)</p>
+              <p><strong>Stunning a Zombie:</strong> Humans may stun a Zombie for 15 minutes by blasting them with a blaster or throwing a sock at them.</p>
+              <p><strong>When Tagged By a Zombie:</strong> When tagged by a Zombie, a Human is required to distribute their ID card. One hour after being tagged, tie your bandanna around your head &ndash; you are now a member of the Zombie team! Go tag some Humans.</p>
+              <p><strong>I.D. Number:</strong> Humans must keep an index card with their unique identification number on them at all times.</p>
+              <p><strong>Staying On Campus:</strong> Humans must sleep on campus. If you need to leave campus for longer than 24 hours, contact the game moderators and remove yourself from the game.</p>
+            </div>
+            <div class='team-column'>
+              <center><h2>Zombie Rules</h2></center>
+              <p><strong>Feeding:</strong> Zombies must feed every 48 hours. A zombie feeds by reporting their tag on the website.</p>
+              <p><strong>Tagging</strong>: A tag is a firm touch to any part of a Human. After tagging a Human the Zombie must collect their ID card and report the tag.</p>
+              <p><strong>Getting Shot:</strong> When hit with a dart, a marshmallow, or a sock, a Zombie is stunned for 15 minutes. A stunned zombie may not interact with the game in any way. This includes shielding other zombies from bullets or continuing to run toward a human. If shot while stunned, the zombie&rsquo;s stun timer is reset back to 15 minutes.</p>
+              <p><strong>Wearing A Headband:</strong> Zombies must wear a bandanna around their heads at all times. The Original Zombie does not need to wear a headband.</p>
+            </div>
+          </div>
+          <h2>Other Rules</h2>
+          <p>Blasting Non-Players: Blasting non-players is a bannable offense.</p>
+          <p>Non-Player Interference: People who are not registered participants may not directly interact with the game. This includes bringing food to humans or spying for either team.</p>
+          <p>Safe Zones: A zombie must have both feet outside of a safe zone to tag a human. Humans can stun zombies from inside of a safe-zone.</p>
+          <p>No Shields: Zombies may not use shields to deflect foam darts, marshmallows or socks.</p>
+          <p>Athletes: Athletes are safe during official practices, but not on the way to or from practice.</p>
+          <p>Required Academic Events: Similarly, students at required academic events are safe for the duration of the event (even if this event is in a free-play zone), but they are not safe on the way to or from the event.</p>
+          <h2>DBag Clause</h2>
+          <p>Don&rsquo;t be a douchebag. Everyone plays Humans vs. Zombies to have fun, and the rules of HvZ only exist because we agree they do. That&rsquo;s why the most important rule of Humans vs. Zombies is to treat your fellow players with respect, and gracefully accept when you have been tagged or stunned.</p>
         </div>
       </section>
       <section id="info" class="black clearfix"> 
