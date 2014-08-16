@@ -107,7 +107,6 @@ section {
         @include span-columns(12);
         .video-holder {
             @include span-columns(4 of 12);
-            width:280px;
 
 
             text-align:center;
@@ -120,9 +119,6 @@ section {
                 font-size:14px;
             }
         }
-    }
-    .video-holder-with-space {
-        margin-right:50px;
     }
 }
 #quote {
@@ -140,6 +136,9 @@ section {
     h2 {
         font-size:22pt;
     }   
+    a {
+        color:black;
+    }
 
     .equipment-row {
         @include span-columns(12);

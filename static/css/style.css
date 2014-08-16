@@ -116,7 +116,6 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      width: 280px;
       text-align: center; }
       #history #videos .video-holder:last-child {
         margin-right: 0; }
@@ -124,8 +123,6 @@ section {
         height: 180px; }
       #history #videos .video-holder .video-label {
         font-size: 14px; }
-  #history .video-holder-with-space {
-    margin-right: 50px; }
 
 #quote blockquote {
   font-size: 55pt;
@@ -135,6 +132,8 @@ section {
   font-size: 20pt; }
 #rules h2 {
   font-size: 22pt; }
+#rules a {
+  color: black; }
 #rules .equipment-row {
   float: left;
   display: block;
