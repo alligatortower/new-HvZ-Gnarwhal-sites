@@ -149,6 +149,10 @@ section {
     a {
         color:black;
     }
+    .contents {
+    @include pad(10% 0 20% 0);
+
+    }
 
     .equipment-row {
         @include row();
@@ -168,7 +172,8 @@ section {
                 width:100%
             }
             .eq-label {
-                font-size:20pt;
+                font-size:18pt;
+
             }
             .check {
                 position:relative;
@@ -212,16 +217,16 @@ section {
             }
 
             #safety-img-1 {
-                top:15px;
+                top:20px;
             }
             #safety-img-2 {
-                top:15px;
+                top:20px;
             }
             #safety-img-3 {
-                top:10px;
+                top:15px;
             }
             #safety-img-4 {
-                top:10px;
+                top:15px;
             }
 
             .safety-text {
@@ -233,6 +238,7 @@ section {
                 ol {
                     list-style-position: inside;
                     margin-left:0px;
+                    padding-left:5px;
 
                     li {
                         font-size:25pt;
@@ -257,6 +263,9 @@ section {
             min-width:300px;
 
         }
+    }
+    .dbag-row {
+        @include row()
     }
 
 }

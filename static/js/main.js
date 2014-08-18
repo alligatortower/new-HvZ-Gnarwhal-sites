@@ -3,20 +3,22 @@ $(document).ready(function(){
         Typekit.load();
     }catch(e){
     }
-    $(function () {
-        var platform = navigator.platform.toLowerCase();
-        if (platform.indexOf('windows') != -1 || platform.indexOf('linux') != -1 || platform.indexOf('win32') != -1) {
-                $.srSmoothscroll();
-        }
-    });
-   $($('section').get().reverse()).each(function(){
-       var $bgobj = $(this); // assigning the object
-       var origin = $bgobj.offset().top;
-       $bgobj.data('height', $bgobj.height());
-       $bgobj.data('origin', origin);
-       $bgobj.css('position', 'absolute');
-       $bgobj.css({ top:origin });
-   });
+    finally {
+        $(function () {
+            var platform = navigator.platform.toLowerCase();
+            if (platform.indexOf('windows') != -1 || platform.indexOf('linux') != -1 || platform.indexOf('win32') != -1) {
+                    $.srSmoothscroll();
+            }
+        });
+       $($('section').get().reverse()).each(function(){
+           var $bgobj = $(this); // assigning the object
+           var origin = $bgobj.offset().top;
+           $bgobj.data('height', $bgobj.height());
+           $bgobj.data('origin', origin);
+           $bgobj.css('position', 'absolute');
+           $bgobj.css({ top:origin });
+       });
+    }
 
    $(window).scroll(function() {
        var yPos = $(window).scrollTop();
