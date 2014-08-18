@@ -3,18 +3,6 @@
 @import "variables";
 @import 'neat/neat';
 
-$mobile-size:em(220);
-$tablet-size:720px;
-$desktop-size:em(960);
-$largedesktop-size:em(1050);
-
-// Bourbon Neat Breakpoints
-$mobile: new-breakpoint(min-width $mobile-size max-width $desktop-size 4);
-$tablet: new-breakpoint(min-width $tablet-size 8);
-$desktop: new-breakpoint(min-width $desktop-size 12);
-$largedesktop: new-breakpoint(min-width $largedesktop-size 16);
-
-
 html, body {
     height: 100%;
 }
@@ -24,19 +12,14 @@ body {
 }
 h2, h3, p, blockquote, small, li {
     line-height:1.3em;
+    @include row();
 }
-h2 {
-    @include span-columns(12);
-}
-
 h3 {
-    @include span-columns(12);
     text-align:right;
     font-size:2em;
 }
 
 p {
-    @include span-columns(12);
     margin-top:0px;
 }
 
@@ -83,8 +66,12 @@ section {
     @include pad(0 0 0 0);
 
     img {
-        max-width: 450px;
-        width:50%
+        @include shift(3);
+        @include span-columns(6);
+        @include media($mobile) {
+            @include shift(0);
+            @include span-columns(4);
+        }
     }
 }
 
@@ -110,7 +97,7 @@ section {
     }
 
     .history-text {
-        @include span-columns(12);
+        @include row();
     }
     #videos {
         @include row();
@@ -118,6 +105,9 @@ section {
 
         .video-holder {
             @include span-columns(4);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
             text-align:center;
 
             .video {
@@ -156,18 +146,11 @@ section {
 
     .equipment-row {
         @include row();
-        .equipment-item-sm {
-            @include span-columns(3);
-
-        }
-        .equipment-item-md {
-            @include span-columns(4);
-        }
-        .equipment-item-lg {
-            @include span-columns(5);
-        }
-
         .equipment-item {
+            @include span-columns(4);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
             .eq-big-img {
                 width:100%
             }
@@ -183,14 +166,13 @@ section {
         }
     }
     .no-play-row {
-        @include span-columns(12);
+        @include row();
         margin-bottom:30px;
-
+        .no-play-item:first-child {
+            @include shift(1);
+        }
         .no-play-item {
-            display:inline-block;
-            max-width:170px;
-            margin-left:9px;
-            margin-right:9px;
+            @include span-columns(2);
             vertical-align:top;
 
             .no-play-img {
@@ -203,37 +185,31 @@ section {
 
     }
     .safety-row {
-        @include span-columns(12);
+        @include row();
         .safety-item {
-            @include span-columns(6 of 12);
-            min-width:310px;
+            @include span-columns(6);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+
 
             .safety-img {
-                width:30%;
-                display:inline-block;
+                @include span-columns(2 of 6);
+                @include media($mobile) {
+                    @include span-columns(4 of 4);
+                }
+
                 vertical-align:top;
                 position:relative;
-                min-width:100px;
-            }
-
-            #safety-img-1 {
-                top:20px;
-            }
-            #safety-img-2 {
-                top:20px;
-            }
-            #safety-img-3 {
-                top:15px;
-            }
-            #safety-img-4 {
-                top:15px;
             }
 
             .safety-text {
-                width:68%;
-                display:inline-block;
+                @include span-columns(4 of 6);
+                @include media($mobile) {
+                    @include span-columns(4 of 4);
+                }
+
                 vertical-align:top;
-                min-width:200px;
 
                 ol {
                     list-style-position: inside;
@@ -248,7 +224,7 @@ section {
         }
     }
     .safety-disclaimer {
-        @include span-columns(12);
+        @include row();
         margin-top:20px;
 
         small {
@@ -256,12 +232,13 @@ section {
         }
     }
     .team-rules-row {
-        @include span-columns(12);
+        @include row();
 
         .team-column {
-            @include span-columns(6 of 12);
-            min-width:300px;
-
+            @include span-columns(6);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
         }
     }
     .dbag-row {
@@ -290,6 +267,10 @@ section {
 
     .gnar-info {
         @include span-columns(6);
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+
         img {
             width:100%;
         }
@@ -301,6 +282,10 @@ section {
     }
     .message {
         @include span-columns(6);
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+
         .input-fields {
             display:block;
             width:100%;
@@ -320,6 +305,10 @@ section {
             padding:15px;
             float:right;
             margin-top:20px;
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+
         }
     }
 }
