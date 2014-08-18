@@ -168,11 +168,12 @@ section {
     .no-play-row {
         @include row();
         margin-bottom:30px;
-        .no-play-item:first-child {
-            @include shift(1);
-        }
         .no-play-item {
             @include span-columns(2);
+            &:first-child {
+                @include shift(1);
+            }
+
             vertical-align:top;
 
             .no-play-img {
