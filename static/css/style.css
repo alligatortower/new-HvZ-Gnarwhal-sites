@@ -83,7 +83,8 @@ section {
   background-size: cover;
   padding: 0 0 0 0; }
   #hvz-logo img {
-    max-width: 450px; }
+    max-width: 450px;
+    width: 50%; }
 
 #intro {
   text-align: center; }
@@ -116,6 +117,8 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
+      max-width: 280px;
+      min-width: 280px;
       text-align: center; }
       #history #videos .video-holder:last-child {
         margin-right: 0; }
@@ -149,12 +152,15 @@ section {
     #rules .equipment-row .equipment-item:last-child {
       margin-right: 0; }
     #rules .equipment-row .equipment-item .eq-big-img {
-      max-width: 300px; }
+      max-width: 300px;
+      min-width: 300px;
+      width: 100%; }
     #rules .equipment-row .equipment-item .eq-label {
       font-size: 20pt; }
     #rules .equipment-row .equipment-item .check {
       position: relative;
-      top: 15px; }
+      top: 15px;
+      max-width: 20%; }
 #rules .no-play-row {
   float: left;
   display: block;
@@ -184,14 +190,16 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
+    width: 48.82117%;
+    min-width: 310px; }
     #rules .safety-row .safety-item:last-child {
       margin-right: 0; }
     #rules .safety-row .safety-item .safety-img {
       width: 30%;
       display: inline-block;
       vertical-align: top;
-      position: relative; }
+      position: relative;
+      min-width: 100px; }
     #rules .safety-row .safety-item #safety-img-1 {
       top: 15px; }
     #rules .safety-row .safety-item #safety-img-2 {
@@ -201,9 +209,10 @@ section {
     #rules .safety-row .safety-item #safety-img-4 {
       top: 10px; }
     #rules .safety-row .safety-item .safety-text {
-      width: 69%;
+      width: 68%;
       display: inline-block;
-      vertical-align: top; }
+      vertical-align: top;
+      min-width: 200px; }
       #rules .safety-row .safety-item .safety-text li {
         font-size: 25pt; }
 #rules .safety-disclaimer {
@@ -227,7 +236,8 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
+    width: 48.82117%;
+    min-width: 300px; }
     #rules .team-rules-row .team-column:last-child {
       margin-right: 0; }
 
@@ -286,6 +296,17 @@ section {
 
 #gnar-logo {
   background-color: #e4eae8; }
+  #gnar-logo img {
+    max-width: 450px;
+    width: 50%; }
+
+#slap-logo {
+  background: url("../img/slapbg.jpg") no-repeat;
+  background-size: cover;
+  padding: 0 0 0 0; }
+  #slap-logo img {
+    max-width: 450px;
+    width: 50%; }
 
 #gnar-footer {
   background-color: #345c64;
@@ -297,6 +318,8 @@ section {
     width: 100%; }
     #gnar-footer .logo-row:last-child {
       margin-right: 0; }
+    #gnar-footer .logo-row img {
+      max-width: 1000px; }
   #gnar-footer .footer-content-row {
     float: left;
     display: block;
@@ -308,18 +331,21 @@ section {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 48.82117%;
+      font-size: 25pt; }
       #gnar-footer .footer-content-row .footer-text:last-child {
         margin-right: 0; }
       #gnar-footer .footer-content-row .footer-text a {
         color: white; }
-    #gnar-footer .footer-content-row .gnester {
+    #gnar-footer .footer-content-row .gnestor {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%; }
-      #gnar-footer .footer-content-row .gnester:last-child {
+      #gnar-footer .footer-content-row .gnestor:last-child {
         margin-right: 0; }
+      #gnar-footer .footer-content-row .gnestor img {
+        max-width: 500px; }
 
 .hidden-wufoo {
   display: none; }

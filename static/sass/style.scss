@@ -69,12 +69,13 @@ section {
 }
 
 #hvz-logo {
-     background: url('../img/webhvzsmall.jpg') no-repeat;
+    background: url('../img/webhvzsmall.jpg') no-repeat;
     background-size: cover;
     @include pad(0 0 0 0);
 
     img {
         max-width: 450px;
+        width:50%
     }
 }
 
@@ -107,6 +108,8 @@ section {
         @include span-columns(12);
         .video-holder {
             @include span-columns(4 of 12);
+            max-width:280px;
+            min-width:280px;
 
 
             text-align:center;
@@ -147,6 +150,8 @@ section {
             @include span-columns(4 of 12);
             .eq-big-img {
                 max-width:300px;
+                min-width:300px;
+                width:100%
             }
             .eq-label {
                 font-size:20pt;
@@ -154,6 +159,7 @@ section {
             .check {
                 position:relative;
                 top:15px;
+                max-width:20%;
             }
         }
     }
@@ -181,11 +187,14 @@ section {
         @include span-columns(12);
         .safety-item {
             @include span-columns(6 of 12);
+            min-width:310px;
+
             .safety-img {
                 width:30%;
                 display:inline-block;
                 vertical-align:top;
                 position:relative;
+                min-width:100px;
             }
                 
             #safety-img-1 {
@@ -202,9 +211,11 @@ section {
             }
             
             .safety-text {
-                width:69%;
+                width:68%;
                 display:inline-block;
                 vertical-align:top;
+                min-width:200px;
+
                 li {
                     font-size:25pt;
                 }
@@ -224,6 +235,8 @@ section {
 
         .team-column {
             @include span-columns(6 of 12);
+            min-width:300px;
+            
         }
     }
 
@@ -295,9 +308,22 @@ section {
 
 #gnar-logo {
     background-color:$gnar-logo-bg;
+
+    img {
+        max-width: 450px;
+        width:50%
+    }
 }
 
 #slap-logo {
+    background: url('../img/slapbg.jpg') no-repeat;
+    background-size: cover;
+    @include pad(0 0 0 0);
+
+    img {
+        max-width: 450px;
+        width:50%;
+    }
 
 }
 
@@ -307,18 +333,25 @@ section {
 
     .logo-row {
         @include span-columns(12);
+        img {
+            max-width:1000px;
+        }
     }
     .footer-content-row {
         @include span-columns(12);
 
         .footer-text {
             @include span-columns(6 of 12);
+            font-size:25pt;
             a {
                 color:white;
             }
         }
-        .gnester {
+        .gnestor {
             @include span-columns(6 of 12);
+            img {
+                max-width:500px;
+            }
         }
     }
 }
