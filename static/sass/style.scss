@@ -172,6 +172,12 @@ section {
             @include span-columns(2);
             &:first-child {
                 @include shift(1);
+                @include media($mobile) {
+                    @include shift(0);
+                }
+            }
+            @include media($mobile) {
+                @include span-columns(4);
             }
 
             vertical-align:top;

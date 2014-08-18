@@ -296,13 +296,27 @@ section {
     /* line 173, ../sass/style.scss */
     #rules .no-play-row .no-play-item:first-child {
       margin-left: 8.5298%; }
-    /* line 179, ../sass/style.scss */
+      @media screen and (min-width: 13.75em) and (max-width: 60em) {
+        /* line 173, ../sass/style.scss */
+        #rules .no-play-row .no-play-item:first-child {
+          margin-left: 0%; } }
+    @media screen and (min-width: 13.75em) and (max-width: 60em) {
+      /* line 171, ../sass/style.scss */
+      #rules .no-play-row .no-play-item {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        /* line 38, ../sass/neat/grid/_span-columns.scss */
+        #rules .no-play-row .no-play-item:last-child {
+          margin-right: 0; } }
+    /* line 185, ../sass/style.scss */
     #rules .no-play-row .no-play-item .no-play-img {
       width: 100%; }
-    /* line 182, ../sass/style.scss */
+    /* line 188, ../sass/style.scss */
     #rules .no-play-row .no-play-item .no-play-label {
       font-size: 18pt; }
-/* line 188, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 #rules .safety-row {
   display: block; }
   /* line 15, ../sass/bourbon/addons/_clearfix.scss */
@@ -310,7 +324,7 @@ section {
     content: "";
     display: table;
     clear: both; }
-  /* line 190, ../sass/style.scss */
+  /* line 196, ../sass/style.scss */
   #rules .safety-row .safety-item {
     float: left;
     display: block;
@@ -320,7 +334,7 @@ section {
     #rules .safety-row .safety-item:last-child {
       margin-right: 0; }
     @media screen and (min-width: 13.75em) and (max-width: 60em) {
-      /* line 190, ../sass/style.scss */
+      /* line 196, ../sass/style.scss */
       #rules .safety-row .safety-item {
         float: left;
         display: block;
@@ -329,7 +343,7 @@ section {
         /* line 38, ../sass/neat/grid/_span-columns.scss */
         #rules .safety-row .safety-item:last-child {
           margin-right: 0; } }
-    /* line 197, ../sass/style.scss */
+    /* line 203, ../sass/style.scss */
     #rules .safety-row .safety-item .safety-img {
       float: left;
       display: block;
@@ -341,7 +355,7 @@ section {
       #rules .safety-row .safety-item .safety-img:last-child {
         margin-right: 0; }
       @media screen and (min-width: 13.75em) and (max-width: 60em) {
-        /* line 197, ../sass/style.scss */
+        /* line 203, ../sass/style.scss */
         #rules .safety-row .safety-item .safety-img {
           float: left;
           display: block;
@@ -350,7 +364,7 @@ section {
           /* line 38, ../sass/neat/grid/_span-columns.scss */
           #rules .safety-row .safety-item .safety-img:last-child {
             margin-right: 0; } }
-    /* line 207, ../sass/style.scss */
+    /* line 213, ../sass/style.scss */
     #rules .safety-row .safety-item .safety-text {
       float: left;
       display: block;
@@ -361,7 +375,7 @@ section {
       #rules .safety-row .safety-item .safety-text:last-child {
         margin-right: 0; }
       @media screen and (min-width: 13.75em) and (max-width: 60em) {
-        /* line 207, ../sass/style.scss */
+        /* line 213, ../sass/style.scss */
         #rules .safety-row .safety-item .safety-text {
           float: left;
           display: block;
@@ -370,15 +384,15 @@ section {
           /* line 38, ../sass/neat/grid/_span-columns.scss */
           #rules .safety-row .safety-item .safety-text:last-child {
             margin-right: 0; } }
-      /* line 215, ../sass/style.scss */
+      /* line 221, ../sass/style.scss */
       #rules .safety-row .safety-item .safety-text ol {
         list-style-position: inside;
         margin-left: 0px;
         padding-left: 5px; }
-        /* line 220, ../sass/style.scss */
+        /* line 226, ../sass/style.scss */
         #rules .safety-row .safety-item .safety-text ol li {
           font-size: 25pt; }
-/* line 227, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 #rules .safety-disclaimer {
   display: block;
   margin-top: 20px; }
@@ -387,10 +401,10 @@ section {
     content: "";
     display: table;
     clear: both; }
-  /* line 231, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   #rules .safety-disclaimer small {
     font-size: 9pt; }
-/* line 235, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 #rules .team-rules-row {
   display: block; }
   /* line 15, ../sass/bourbon/addons/_clearfix.scss */
@@ -398,7 +412,7 @@ section {
     content: "";
     display: table;
     clear: both; }
-  /* line 238, ../sass/style.scss */
+  /* line 244, ../sass/style.scss */
   #rules .team-rules-row .team-column {
     float: left;
     display: block;
@@ -408,7 +422,7 @@ section {
     #rules .team-rules-row .team-column:last-child {
       margin-right: 0; }
     @media screen and (min-width: 13.75em) and (max-width: 60em) {
-      /* line 238, ../sass/style.scss */
+      /* line 244, ../sass/style.scss */
       #rules .team-rules-row .team-column {
         float: left;
         display: block;
@@ -417,7 +431,7 @@ section {
         /* line 38, ../sass/neat/grid/_span-columns.scss */
         #rules .team-rules-row .team-column:last-child {
           margin-right: 0; } }
-/* line 245, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 #rules .dbag-row {
   display: block; }
   /* line 15, ../sass/bourbon/addons/_clearfix.scss */
@@ -426,21 +440,21 @@ section {
     display: table;
     clear: both; }
 
-/* line 252, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 #info h2 {
   font-size: 30pt; }
-/* line 255, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 #info p {
   font-size: 25pt;
   padding: 0 0 0 40px; }
-/* line 259, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 #info a {
   color: #f2b134; }
 
-/* line 265, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 #footer a {
   color: #ed553b; }
-/* line 269, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 #footer .gnar-info {
   float: left;
   display: block;
@@ -450,7 +464,7 @@ section {
   #footer .gnar-info:last-child {
     margin-right: 0; }
   @media screen and (min-width: 13.75em) and (max-width: 60em) {
-    /* line 269, ../sass/style.scss */
+    /* line 275, ../sass/style.scss */
     #footer .gnar-info {
       float: left;
       display: block;
@@ -459,13 +473,13 @@ section {
       /* line 38, ../sass/neat/grid/_span-columns.scss */
       #footer .gnar-info:last-child {
         margin-right: 0; } }
-  /* line 275, ../sass/style.scss */
+  /* line 281, ../sass/style.scss */
   #footer .gnar-info img {
     width: 100%; }
-  /* line 280, ../sass/style.scss */
+  /* line 286, ../sass/style.scss */
   #footer .gnar-info li {
     display: inline; }
-/* line 284, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 #footer .message {
   float: left;
   display: block;
@@ -475,7 +489,7 @@ section {
   #footer .message:last-child {
     margin-right: 0; }
   @media screen and (min-width: 13.75em) and (max-width: 60em) {
-    /* line 284, ../sass/style.scss */
+    /* line 290, ../sass/style.scss */
     #footer .message {
       float: left;
       display: block;
@@ -484,20 +498,20 @@ section {
       /* line 38, ../sass/neat/grid/_span-columns.scss */
       #footer .message:last-child {
         margin-right: 0; } }
-  /* line 290, ../sass/style.scss */
+  /* line 296, ../sass/style.scss */
   #footer .message .input-fields {
     display: block;
     width: 100%;
     background-color: #f1f1f1;
     border: none;
     padding: 15px; }
-  /* line 297, ../sass/style.scss */
+  /* line 303, ../sass/style.scss */
   #footer .message .message-email {
     margin-top: 15px; }
-  /* line 300, ../sass/style.scss */
+  /* line 306, ../sass/style.scss */
   #footer .message .message-body {
     margin-top: 25px; }
-  /* line 303, ../sass/style.scss */
+  /* line 309, ../sass/style.scss */
   #footer .message button {
     background-color: #c6c6c6;
     border: none;
@@ -505,7 +519,7 @@ section {
     float: right;
     margin-top: 20px; }
     @media screen and (min-width: 13.75em) and (max-width: 60em) {
-      /* line 303, ../sass/style.scss */
+      /* line 309, ../sass/style.scss */
       #footer .message button {
         float: left;
         display: block;
@@ -515,29 +529,29 @@ section {
         #footer .message button:last-child {
           margin-right: 0; } }
 
-/* line 319, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 #gnar-logo {
   background-color: #e4eae8; }
-  /* line 322, ../sass/style.scss */
+  /* line 328, ../sass/style.scss */
   #gnar-logo img {
     max-width: 450px;
     width: 50%; }
 
-/* line 328, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 #slap-logo {
   background: url("../img/slapbg.jpg") no-repeat;
   background-size: cover;
   padding: 0 0 0 0; }
-  /* line 333, ../sass/style.scss */
+  /* line 339, ../sass/style.scss */
   #slap-logo img {
     max-width: 450px;
     width: 50%; }
 
-/* line 340, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 #gnar-footer {
   background-color: #345c64;
   color: white; }
-  /* line 344, ../sass/style.scss */
+  /* line 350, ../sass/style.scss */
   #gnar-footer .logo-row {
     float: left;
     display: block;
@@ -546,10 +560,10 @@ section {
     /* line 38, ../sass/neat/grid/_span-columns.scss */
     #gnar-footer .logo-row:last-child {
       margin-right: 0; }
-    /* line 346, ../sass/style.scss */
+    /* line 352, ../sass/style.scss */
     #gnar-footer .logo-row img {
       max-width: 1000px; }
-  /* line 350, ../sass/style.scss */
+  /* line 356, ../sass/style.scss */
   #gnar-footer .footer-content-row {
     float: left;
     display: block;
@@ -558,7 +572,7 @@ section {
     /* line 38, ../sass/neat/grid/_span-columns.scss */
     #gnar-footer .footer-content-row:last-child {
       margin-right: 0; }
-    /* line 353, ../sass/style.scss */
+    /* line 359, ../sass/style.scss */
     #gnar-footer .footer-content-row .footer-text {
       float: left;
       display: block;
@@ -568,10 +582,10 @@ section {
       /* line 38, ../sass/neat/grid/_span-columns.scss */
       #gnar-footer .footer-content-row .footer-text:last-child {
         margin-right: 0; }
-      /* line 356, ../sass/style.scss */
+      /* line 362, ../sass/style.scss */
       #gnar-footer .footer-content-row .footer-text a {
         color: white; }
-    /* line 360, ../sass/style.scss */
+    /* line 366, ../sass/style.scss */
     #gnar-footer .footer-content-row .gnestor {
       float: left;
       display: block;
@@ -580,10 +594,10 @@ section {
       /* line 38, ../sass/neat/grid/_span-columns.scss */
       #gnar-footer .footer-content-row .gnestor:last-child {
         margin-right: 0; }
-      /* line 362, ../sass/style.scss */
+      /* line 368, ../sass/style.scss */
       #gnar-footer .footer-content-row .gnestor img {
         max-width: 500px; }
 
-/* line 371, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .hidden-wufoo {
   display: none; }

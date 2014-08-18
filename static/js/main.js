@@ -38,18 +38,17 @@ $(document).ready(function(){
             var stopCheck = origin + (cardHeight - browserHeight);
             var fixHeight = yPos - (cardHeight - browserHeight);
 
-            if (yPos === origin){
-                card.css({ top:origin });
-            }
-            else if (yPos > stopCheck){
+            if (yPos > stopCheck){
                 card.css({top: fixHeight});
             }
-        }
-        if (yPos <= 0) {
-            $('section').first().css({top:0});
+            else if (yPos <= 10) {
+                $('section').first().css({top:0});
+            }
+
+
         }
     })
         .resize(function() {
-            location.reload();
+            //location.reload();
         });
 });
