@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    try{
+        Typekit.load();
+    }catch(e){
+    }
     $(function () {
         var platform = navigator.platform.toLowerCase();
         if (platform.indexOf('windows') != -1 || platform.indexOf('linux') != -1 || platform.indexOf('win32') != -1) {

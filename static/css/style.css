@@ -15,7 +15,8 @@ h2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  line-height: 1.1em; }
   h2:last-child {
     margin-right: 0; }
 
@@ -34,13 +35,16 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  width: 100%;
-  margin-top: 0px; }
+  margin-top: 0px;
+  line-height: 1.1em; }
   p:last-child {
     margin-right: 0; }
 
 blockquote {
-  font-size: 2.5em; }
+  line-height: 1.1em; }
+
+small {
+  line-height: 1.1em; }
 
 section {
   width: 100%;
@@ -240,14 +244,6 @@ section {
     min-width: 300px; }
     #rules .team-rules-row .team-column:last-child {
       margin-right: 0; }
-
-.smaller-logo {
-  margin: 0px;
-  padding: 0 0 0 0; }
-
-.full-rules {
-  padding: 0 0 0 0;
-  margin-top: 0px; }
 
 #info h2 {
   font-size: 30pt; }
