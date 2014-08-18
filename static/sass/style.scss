@@ -9,10 +9,11 @@ body {
     position:relative;
     font-family: "ff-tisa-web-pro",serif;
 }
-
+h2, h3, p, blockquote, small, li {
+    line-height:1.3em;
+}
 h2 {
     @include span-columns(12);
-    line-height:1.1em
 }
 
 h3 {
@@ -24,16 +25,8 @@ h3 {
 p {
     @include span-columns(12);
     margin-top:0px;
-    line-height:1.1em;
 }
 
-blockquote {
-    line-height:1.1em;
-
-}
-small {
-    line-height:1.1em;
-}
 section {
     width: 100%;
     height: auto;
@@ -106,26 +99,24 @@ section {
     .history-text {
         @include span-columns(12);
     }
-
-   #videos {
-        @include span-columns(12);
+    #videos {
+        @include row();
+        height:180px;
+        
         .video-holder {
-            @include span-columns(4 of 12);
-            max-width:280px;
-            min-width:280px;
-
-
+            @include span-columns(4);
             text-align:center;
 
             .video {
                 
-                height:180px;
+                
             }
             .video-label {
                 font-size:14px;
             }
         }
     }
+
 }
 #quote {
     blockquote {
@@ -219,8 +210,13 @@ section {
                 vertical-align:top;
                 min-width:200px;
 
-                li {
-                    font-size:25pt;
+                ol {
+                    list-style-position: inside;
+                    margin-left:0px;
+
+                    li {
+                        font-size:25pt;
+                    }
                 }
             }
         }

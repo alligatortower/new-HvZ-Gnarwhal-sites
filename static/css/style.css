@@ -11,12 +11,14 @@ body {
   position: relative;
   font-family: "ff-tisa-web-pro",serif; }
 
+h2, h3, p, blockquote, small, li {
+  line-height: 1.3em; }
+
 h2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  line-height: 1.1em; }
+  width: 100%; }
   h2:last-child {
     margin-right: 0; }
 
@@ -35,16 +37,9 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-top: 0px;
-  line-height: 1.1em; }
+  margin-top: 0px; }
   p:last-child {
     margin-right: 0; }
-
-blockquote {
-  line-height: 1.1em; }
-
-small {
-  line-height: 1.1em; }
 
 section {
   width: 100%;
@@ -110,24 +105,20 @@ section {
     #history .history-text:last-child {
       margin-right: 0; }
   #history #videos {
-    float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    #history #videos:last-child {
-      margin-right: 0; }
+    height: 180px; }
+    #history #videos:after {
+      content: "";
+      display: table;
+      clear: both; }
     #history #videos .video-holder {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      max-width: 280px;
-      min-width: 280px;
       text-align: center; }
       #history #videos .video-holder:last-child {
         margin-right: 0; }
-      #history #videos .video-holder .video {
-        height: 180px; }
       #history #videos .video-holder .video-label {
         font-size: 14px; }
 
@@ -217,8 +208,11 @@ section {
       display: inline-block;
       vertical-align: top;
       min-width: 200px; }
-      #rules .safety-row .safety-item .safety-text li {
-        font-size: 25pt; }
+      #rules .safety-row .safety-item .safety-text ol {
+        list-style-position: inside;
+        margin-left: 0px; }
+        #rules .safety-row .safety-item .safety-text ol li {
+          font-size: 25pt; }
 #rules .safety-disclaimer {
   float: left;
   display: block;
