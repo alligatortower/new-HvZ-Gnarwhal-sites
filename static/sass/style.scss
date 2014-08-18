@@ -151,13 +151,20 @@ section {
     }
 
     .equipment-row {
-        @include span-columns(12);
+        @include row();
+        .equipment-item-sm {
+            @include span-columns(2);
+
+        }
+        .equipment-item-md {
+            @include span-columns(4);
+        }
+        .equipment-item-lg {
+            @include span-columns(5);
+        }
 
         .equipment-item {
-            @include span-columns(4 of 12);
             .eq-big-img {
-                max-width:300px;
-                min-width:300px;
                 width:100%
             }
             .eq-label {

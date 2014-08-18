@@ -1,27 +1,34 @@
 /* http://neat.bourbon.io/docs/ */
+/* line 2, ../sass/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 18, ../sass/style.scss */
 html, body {
   height: 100%; }
 
+/* line 21, ../sass/style.scss */
 body {
   position: relative;
   font-family: "ff-tisa-web-pro",serif; }
 
+/* line 25, ../sass/style.scss */
 h2, h3, p, blockquote, small, li {
   line-height: 1.3em; }
 
+/* line 28, ../sass/style.scss */
 h2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   h2:last-child {
     margin-right: 0; }
 
+/* line 32, ../sass/style.scss */
 h3 {
   float: left;
   display: block;
@@ -29,254 +36,343 @@ h3 {
   width: 100%;
   text-align: right;
   font-size: 2em; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   h3:last-child {
     margin-right: 0; }
 
+/* line 38, ../sass/style.scss */
 p {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-top: 0px; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   p:last-child {
     margin-right: 0; }
 
+/* line 43, ../sass/style.scss */
 section {
   width: 100%;
   height: auto;
   min-height: 100% !important;
   -webkit-transform: translate3d(0, 0, 0); }
 
+/* line 50, ../sass/style.scss */
 .contents {
   max-width: 62.5em;
   margin-left: auto;
   margin-right: auto;
   padding: 10% 0 15% 0; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
   .contents:after {
     content: "";
     display: table;
     clear: both; }
 
+/* line 56, ../sass/style.scss */
 .black {
   background-color: black;
   color: white; }
 
+/* line 60, ../sass/style.scss */
 .red {
   background-color: #ed553b;
   color: white; }
 
+/* line 65, ../sass/style.scss */
 .teal {
   background-color: #068587;
   color: white; }
 
+/* line 70, ../sass/style.scss */
 .yellow {
   background-color: #f2b134;
   color: black; }
 
+/* line 75, ../sass/style.scss */
 .white {
   background-color: white;
   color: black; }
 
+/* line 80, ../sass/style.scss */
 #hvz-logo {
   background: url("../img/webhvzsmall.jpg") no-repeat;
   background-size: cover;
   padding: 0 0 0 0; }
+  /* line 85, ../sass/style.scss */
   #hvz-logo img {
     max-width: 450px;
     width: 50%; }
 
+/* line 92, ../sass/style.scss */
 #intro {
   text-align: center; }
+  /* line 95, ../sass/style.scss */
   #intro p {
     font-size: 38pt; }
+  /* line 99, ../sass/style.scss */
   #intro img {
     width: 100%;
     max-width: 1000px; }
 
+/* line 105, ../sass/style.scss */
 #history {
   padding: 0 0 0 0; }
+  /* line 108, ../sass/style.scss */
   #history p {
     font-size: 30pt; }
+  /* line 112, ../sass/style.scss */
   #history .history-text {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
     #history .history-text:last-child {
       margin-right: 0; }
+  /* line 115, ../sass/style.scss */
   #history #videos {
     display: block;
     height: 180px; }
+    /* line 15, ../sass/bourbon/addons/_clearfix.scss */
     #history #videos:after {
       content: "";
       display: table;
       clear: both; }
+    /* line 119, ../sass/style.scss */
     #history #videos .video-holder {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
       text-align: center; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
       #history #videos .video-holder:last-child {
         margin-right: 0; }
+      /* line 127, ../sass/style.scss */
       #history #videos .video-holder .video-label {
         font-size: 14px; }
 
+/* line 135, ../sass/style.scss */
 #quote blockquote {
   font-size: 55pt;
   font-style: italic; }
 
+/* line 142, ../sass/style.scss */
 #rules p {
   font-size: 20pt; }
+/* line 146, ../sass/style.scss */
 #rules h2 {
   font-size: 22pt; }
+/* line 149, ../sass/style.scss */
 #rules a {
   color: black; }
+/* line 153, ../sass/style.scss */
 #rules .equipment-row {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  #rules .equipment-row:last-child {
-    margin-right: 0; }
-  #rules .equipment-row .equipment-item {
+  display: block; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  #rules .equipment-row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 155, ../sass/style.scss */
+  #rules .equipment-row .equipment-item-sm {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    #rules .equipment-row .equipment-item-sm:last-child {
+      margin-right: 0; }
+  /* line 159, ../sass/style.scss */
+  #rules .equipment-row .equipment-item-md {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    #rules .equipment-row .equipment-item:last-child {
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    #rules .equipment-row .equipment-item-md:last-child {
       margin-right: 0; }
-    #rules .equipment-row .equipment-item .eq-big-img {
-      max-width: 300px;
-      min-width: 300px;
-      width: 100%; }
-    #rules .equipment-row .equipment-item .eq-label {
-      font-size: 20pt; }
-    #rules .equipment-row .equipment-item .check {
-      position: relative;
-      top: 15px;
-      max-width: 20%; }
+  /* line 162, ../sass/style.scss */
+  #rules .equipment-row .equipment-item-lg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    #rules .equipment-row .equipment-item-lg:last-child {
+      margin-right: 0; }
+  /* line 167, ../sass/style.scss */
+  #rules .equipment-row .equipment-item .eq-big-img {
+    width: 100%; }
+  /* line 170, ../sass/style.scss */
+  #rules .equipment-row .equipment-item .eq-label {
+    font-size: 20pt; }
+  /* line 173, ../sass/style.scss */
+  #rules .equipment-row .equipment-item .check {
+    position: relative;
+    top: 15px;
+    max-width: 20%; }
+/* line 180, ../sass/style.scss */
 #rules .no-play-row {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 30px; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   #rules .no-play-row:last-child {
     margin-right: 0; }
+  /* line 184, ../sass/style.scss */
   #rules .no-play-row .no-play-item {
     display: inline-block;
     max-width: 170px;
     margin-left: 9px;
     margin-right: 9px;
     vertical-align: top; }
+    /* line 191, ../sass/style.scss */
     #rules .no-play-row .no-play-item .no-play-img {
       width: 100%; }
+    /* line 194, ../sass/style.scss */
     #rules .no-play-row .no-play-item .no-play-label {
       font-size: 18pt; }
+/* line 200, ../sass/style.scss */
 #rules .safety-row {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   #rules .safety-row:last-child {
     margin-right: 0; }
+  /* line 202, ../sass/style.scss */
   #rules .safety-row .safety-item {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     min-width: 310px; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
     #rules .safety-row .safety-item:last-child {
       margin-right: 0; }
+    /* line 206, ../sass/style.scss */
     #rules .safety-row .safety-item .safety-img {
       width: 30%;
       display: inline-block;
       vertical-align: top;
       position: relative;
       min-width: 100px; }
+    /* line 214, ../sass/style.scss */
     #rules .safety-row .safety-item #safety-img-1 {
       top: 15px; }
+    /* line 217, ../sass/style.scss */
     #rules .safety-row .safety-item #safety-img-2 {
       top: 15px; }
+    /* line 220, ../sass/style.scss */
     #rules .safety-row .safety-item #safety-img-3 {
       top: 10px; }
+    /* line 223, ../sass/style.scss */
     #rules .safety-row .safety-item #safety-img-4 {
       top: 10px; }
+    /* line 227, ../sass/style.scss */
     #rules .safety-row .safety-item .safety-text {
       width: 68%;
       display: inline-block;
       vertical-align: top;
       min-width: 200px; }
+      /* line 233, ../sass/style.scss */
       #rules .safety-row .safety-item .safety-text ol {
         list-style-position: inside;
         margin-left: 0px; }
+        /* line 237, ../sass/style.scss */
         #rules .safety-row .safety-item .safety-text ol li {
           font-size: 25pt; }
+/* line 244, ../sass/style.scss */
 #rules .safety-disclaimer {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-top: 20px; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   #rules .safety-disclaimer:last-child {
     margin-right: 0; }
+  /* line 248, ../sass/style.scss */
   #rules .safety-disclaimer small {
     font-size: 9pt; }
+/* line 252, ../sass/style.scss */
 #rules .team-rules-row {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   #rules .team-rules-row:last-child {
     margin-right: 0; }
+  /* line 255, ../sass/style.scss */
   #rules .team-rules-row .team-column {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     min-width: 300px; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
     #rules .team-rules-row .team-column:last-child {
       margin-right: 0; }
 
+/* line 265, ../sass/style.scss */
 #info h2 {
   font-size: 30pt; }
+/* line 268, ../sass/style.scss */
 #info p {
   font-size: 25pt;
   padding: 0 0 0 40px; }
+/* line 272, ../sass/style.scss */
 #info a {
   color: #f2b134; }
 
+/* line 278, ../sass/style.scss */
 #footer a {
   color: #ed553b; }
+/* line 282, ../sass/style.scss */
 #footer .gnar-info {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   #footer .gnar-info:last-child {
     margin-right: 0; }
+  /* line 284, ../sass/style.scss */
   #footer .gnar-info img {
     width: 100%; }
+  /* line 289, ../sass/style.scss */
   #footer .gnar-info li {
     display: inline; }
+/* line 293, ../sass/style.scss */
 #footer .message {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
   #footer .message:last-child {
     margin-right: 0; }
+  /* line 295, ../sass/style.scss */
   #footer .message .input-fields {
     display: block;
     width: 100%;
     background-color: #f1f1f1;
     border: none;
     padding: 15px; }
+  /* line 302, ../sass/style.scss */
   #footer .message .message-email {
     margin-top: 15px; }
+  /* line 305, ../sass/style.scss */
   #footer .message .message-body {
     margin-top: 25px; }
+  /* line 308, ../sass/style.scss */
   #footer .message button {
     background-color: #c6c6c6;
     border: none;
@@ -284,58 +380,75 @@ section {
     float: right;
     margin-top: 20px; }
 
+/* line 320, ../sass/style.scss */
 #gnar-logo {
   background-color: #e4eae8; }
+  /* line 323, ../sass/style.scss */
   #gnar-logo img {
     max-width: 450px;
     width: 50%; }
 
+/* line 329, ../sass/style.scss */
 #slap-logo {
   background: url("../img/slapbg.jpg") no-repeat;
   background-size: cover;
   padding: 0 0 0 0; }
+  /* line 334, ../sass/style.scss */
   #slap-logo img {
     max-width: 450px;
     width: 50%; }
 
+/* line 341, ../sass/style.scss */
 #gnar-footer {
   background-color: #345c64;
   color: white; }
+  /* line 345, ../sass/style.scss */
   #gnar-footer .logo-row {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
     #gnar-footer .logo-row:last-child {
       margin-right: 0; }
+    /* line 347, ../sass/style.scss */
     #gnar-footer .logo-row img {
       max-width: 1000px; }
+  /* line 351, ../sass/style.scss */
   #gnar-footer .footer-content-row {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
     #gnar-footer .footer-content-row:last-child {
       margin-right: 0; }
+    /* line 354, ../sass/style.scss */
     #gnar-footer .footer-content-row .footer-text {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       font-size: 25pt; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
       #gnar-footer .footer-content-row .footer-text:last-child {
         margin-right: 0; }
+      /* line 357, ../sass/style.scss */
       #gnar-footer .footer-content-row .footer-text a {
         color: white; }
+    /* line 361, ../sass/style.scss */
     #gnar-footer .footer-content-row .gnestor {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
       #gnar-footer .footer-content-row .gnestor:last-child {
         margin-right: 0; }
+      /* line 363, ../sass/style.scss */
       #gnar-footer .footer-content-row .gnestor img {
         max-width: 500px; }
 
+/* line 372, ../sass/style.scss */
 .hidden-wufoo {
   display: none; }
