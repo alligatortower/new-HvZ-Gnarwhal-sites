@@ -599,8 +599,28 @@ section {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-right: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 2em;
+  min-height: 80px; }
   /* line 38, ../sass/neat/grid/_span-columns.scss */
   #merch .merch-item:last-child {
     margin-right: 0; }
+  /* line 52, ../sass/neat/grid/_omega.scss */
+  #merch .merch-item:nth-child(2n) {
+    margin-right: 0; }
+  /* line 57, ../sass/neat/grid/_omega.scss */
+  #merch .merch-item:nth-child(2n+1) {
+    clear: left; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 383, ../sass/style.scss */
+    #merch .merch-item {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
+      #merch .merch-item:last-child {
+        margin-right: 0; } }
+/* line 393, ../sass/style.scss */
+#merch img {
+  width: 100%; }

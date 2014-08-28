@@ -382,7 +382,16 @@ section {
 #merch {
     .merch-item {
         @include span-columns(6);
-        @include omega;
+        @include omega(2n);
         text-align: center;
+        font-size:2em;
+        min-height: 80px;
+        @include media($mobile) {
+            @include span-columns(4);
+        }
     }
+    img {
+        width: 100%;
+    }
+
 }
