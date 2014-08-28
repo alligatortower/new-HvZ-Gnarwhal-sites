@@ -385,7 +385,7 @@ section {
         @include omega(2n);
         text-align: center;
         font-size:2em;
-        min-height: 80px;
+        min-height: 470px;
         @include media($mobile) {
             @include span-columns(4);
         }

@@ -553,7 +553,7 @@ section {
   width: 48.82117%;
   text-align: center;
   font-size: 2em;
-  min-height: 80px; }
+  min-height: 470px; }
   /* line 38, ../sass/neat/grid/_span-columns.scss */
   #merch .merch-item:last-child {
     margin-right: 0; }
