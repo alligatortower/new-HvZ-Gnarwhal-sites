@@ -145,6 +145,7 @@ section {
     }
 
     .equipment-row {
+        min-height: 240px;
         @include row();
         .equipment-item {
             @include span-columns(4);
@@ -166,6 +167,7 @@ section {
         }
     }
     .no-play-row {
+        min-height: 280px;
         @include row();
         margin-bottom:30px;
         .no-play-item {
