@@ -377,3 +377,12 @@ section {
 .hidden-wufoo {
     display:none;
 }
+
+
+#merch {
+    .merch-item {
+        @include span-columns(6);
+        @include omega;
+        text-align: center;
+    }
+}

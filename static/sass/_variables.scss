@@ -19,7 +19,7 @@ $dark-blue: #112f41;
 $input-background: #f1f1f1;
 $submit-background: #c6c6c6;
 
-//$visual-grid: true;
+$visual-grid: true;
 $visual-grid-color: #E6F6FF;
 $visual-grid-opacity: 0.4;
 $visual-grid-index: "front";
@@ -34,4 +34,4 @@ $largedesktop-size:em(1050);
 $mobile: new-breakpoint(min-width $mobile-size max-width $desktop-size 4);
 $tablet: new-breakpoint(min-width $tablet-size 8);
 $desktop: new-breakpoint(min-width $desktop-size 12);
-$largedesktop: new-breakpoint(min-width $largedesktop-size 16);
+//$largedesktop: new-breakpoint(min-width $largedesktop-size 16);

@@ -67,3 +67,4 @@ static/sass/style.css
 
 #VIM
 *.swp
+*Thumbs.db
