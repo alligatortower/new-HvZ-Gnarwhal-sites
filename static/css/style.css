@@ -578,3 +578,28 @@ section {
 /* line 395, ../sass/style.scss */
 #merch img {
   width: 100%; }
+
+.emailtxtfield input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0px 20px 20px;
+  outline: none;
+  padding-left: 30px;
+  color: #494949;
+  font-size: 38px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+  border-right-radius: 0px;
+}
+.emailbutton input {
+  font-size: 38px;
+  padding: 10px;
+  border: none;
+  background: white;
+  border-radius: 0px 20px 20px 20px;
+  color: #505050;
+  font-weight: 100;
+}
+
