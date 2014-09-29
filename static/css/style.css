@@ -579,7 +579,7 @@ section {
 #merch img {
   width: 100%; }
 
-.emailtxtfield input {
+.emailtxtfield  {
   width: 80%;
   padding: 10px;
   border: none;
@@ -593,7 +593,7 @@ section {
   margin-top: 20px;
   border-right-radius: 0px;
 }
-.emailbutton input {
+.emailbutton  {
   font-size: 38px;
   padding: 10px;
   border: none;
