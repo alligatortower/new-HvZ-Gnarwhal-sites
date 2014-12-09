@@ -170,11 +170,11 @@ section {
 #bullshit blockquote {
   font-size: 55pt;
   font-style: italic; }
-#bullshit p {
+  #bullshit p {
     font-size: 30pt; }
-#bullshit a {
+  #bullshit a {
     color: white; }
-#bullshit a:hover {
+  #bullshit a:hover {
     color: red; }
 /* line 132, ../sass/style.scss */
 #rules p {
