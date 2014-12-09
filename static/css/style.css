@@ -166,7 +166,9 @@ section {
 #quote blockquote {
   font-size: 55pt;
   font-style: italic; }
-
+#bullshit blockquote {
+  font-size: 55pt;
+  font-style: italic; }
 /* line 132, ../sass/style.scss */
 #rules p {
   font-size: 20pt; }
