@@ -177,7 +177,7 @@ section {
   #bullshit a:hover {
     color: red; }
   #bullshit ul li {
-    list-style-type: circle;
+    list-style: square outside none;
     font-size: 28pt; }
 /* line 132, ../sass/style.scss */
 #rules p {
