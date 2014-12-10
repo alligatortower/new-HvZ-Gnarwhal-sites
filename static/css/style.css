@@ -172,10 +172,7 @@ section {
   font-style: italic; }
   #bullshit p {
     font-size: 30pt; }
-  #bullshit a {
-    color: white; }
-  #bullshit a:hover {
-    color: red; }
+
   #bullshit ul li {
     list-style: square outside none;
     font-size: 28pt; }
